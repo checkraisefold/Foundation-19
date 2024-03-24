@@ -702,7 +702,7 @@ GLOBAL_LIST_EMPTY(conversion_cards)
 /obj/item/card/id/mtf/Initialize()
 	. = ..()
 	rank = "Mobile Task Force Operative"
-	access |= get_all_site_access()
+	access |= get_all_site_access() | get_all_centcom_access()
 
 
 /obj/item/card/id/physics
